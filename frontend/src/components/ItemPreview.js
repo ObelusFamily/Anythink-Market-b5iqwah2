@@ -34,12 +34,12 @@ const ItemPreview = (props) => {
       className="card bg-dark border-light p-3"
       style={{ borderRadius: "20px" }}
     >
-     {item.image && <img
+     <img
         alt="item"
-        src={item.image}
+        src={item.image || "https://static.productionready.io/images/smiley-cyrus.jpg"}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
-      />}
+      />
       <div className="card-body">
         <Link to={`/item/${item.slug}`} className="text-white">
           <h3 className="card-title">{item.title}</h3>
