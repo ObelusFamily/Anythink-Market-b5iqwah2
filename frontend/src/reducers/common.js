@@ -30,7 +30,7 @@ const reducer = (state = defaultState, action) => {
         ...state,
         token: action.token || null,
         appLoaded: true,
-        currentUser: action.payload ? action.payload.user : null,
+        currentUser: action.payload ? {...action.payload.user, image: action.payload.user || "https://static.productionready.io/images/smiley-cyrus.jpg" } : null,
       };
     case REDIRECT:
       return { ...state, redirectTo: null };
