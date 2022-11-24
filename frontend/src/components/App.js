@@ -20,6 +20,7 @@ const mapStateToProps = (state) => {
     appLoaded: state.common.appLoaded,
     appName: state.common.appName,
     currentUser: state.common.currentUser,
+    image:state.profile.image,
     redirectTo: state.common.redirectTo,
   };
 };
@@ -55,6 +56,7 @@ class App extends React.Component {
           <Header
             appName={this.props.appName}
             currentUser={this.props.currentUser}
+            image={this.props.image}
           />
           <Switch>
             <Route exact path="/" component={Home} />

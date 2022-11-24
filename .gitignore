@@ -11,6 +11,9 @@
 # testing
 /coverage
 
+#compose-dev
+/compose-dev.yaml
+
 # production
 /backend/build
 /frontend/build
