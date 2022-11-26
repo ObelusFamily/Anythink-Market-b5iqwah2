@@ -33,8 +33,9 @@ class SettingsForm extends React.Component {
       if (!user.password) {
         delete user.password;
       }
-      if(!user.image){
-        user.image = "https://static.productionready.io/images/smiley-cyrus.jpg"
+      if (!user.image) {
+        user.image =
+          "https://static.productionready.io/images/smiley-cyrus.jpg";
       }
 
       this.props.onSubmitForm(user);
