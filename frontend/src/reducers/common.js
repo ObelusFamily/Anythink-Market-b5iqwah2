@@ -34,7 +34,7 @@ const reducer = (state = defaultState, action) => {
           ? {
               ...action.payload.user,
               image:
-                action.payload.user ||
+                action.payload.user.image ||
                 "https://static.productionready.io/images/smiley-cyrus.jpg",
             }
           : null,
